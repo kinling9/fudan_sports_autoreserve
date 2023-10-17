@@ -6,7 +6,7 @@ on:
 
 jobs:
   reserve:
-    name: Code Format Check
+    name: fudan sports
     runs-on: ubuntu-latest
 
     steps:
