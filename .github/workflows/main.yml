@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  code_format_check:
+  reserve:
     name: Code Format Check
     runs-on: ubuntu-latest
 
