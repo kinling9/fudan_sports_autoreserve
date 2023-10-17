@@ -25,4 +25,4 @@ jobs:
 
       - name: reserve
         run: |
-          python3 ./main.py '${{ secrets.FUDAN }}'
+          OPENSSL_CNF=openssl.cnf python3 ./main.py '${{ secrets.FUDAN }}'

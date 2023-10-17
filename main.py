@@ -19,8 +19,6 @@ EMAIL_PASSWORD = "YOUR_EMAIL_PASSWORD"  # Password for the email account
 
 if __name__ == '__main__':
     USER_ID, USER_PASSWORD = sys.argv[1].strip().split(" ")
-    print(f"USER_ID: {USER_ID}")
-    print(f"USER_PASSWORD: {USER_PASSWORD}")
     try:
         logged_in_session = apis.login(USER_ID, USER_PASSWORD)
         campus_id, sport_id = apis.load_sports_and_campus_id(logged_in_session, SERVICE_CATEGORY, CAMPUS_NAME, SPORT_NAME)
